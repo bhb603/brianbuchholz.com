@@ -1,0 +1,31 @@
+title: brianbuchholz.com
+description: >-
+  The personal site of Brian Buchholz.
+  Currently a software developer at Codecademy in New York, NY.
+url: "https://www.brianbuchholz.com"
+logo: assets/img/profile.jpg
+github_username:  bhb603
+linkedin_username: buchholz1
+keybase_username: bhb
+twitter_username: BrianHBuchholz
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+# plugins:
+#   - jekyll-feed
+
+sass:
+  sass_dir: _sass
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
