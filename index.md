@@ -6,7 +6,7 @@ layout: default
 
 I'm a software engineer in New York.
 
-I work at [Codecademy](https://codecademy.com) helping to build the online platform where millions of people learn to code.
+I work at [Codecademy](https://codecademy.com) developing the platform where millions of people learn to `code`.
 
 Links:
 - [GitHub](https://github.com/{{ site.github_username }})
