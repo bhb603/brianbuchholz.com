@@ -4,9 +4,7 @@ layout: default
 
 # Hello World
 
-I'm a software engineer in New York.
-
-I work at [Codecademy](https://codecademy.com) developing the platform where millions of people learn to `code`.
+I'm a software engineer at [Codecademy](https://www.codecademy.com).
 
 Links:
 - [GitHub](https://github.com/{{ site.github_username }})
