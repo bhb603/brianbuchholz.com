@@ -49,7 +49,9 @@ googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by
 showAllPostsArchive = false # default
 
 # Home page settings
-description = ""
+description = """
+I'm a software engineer at [Codecademy](https://www.codecademy.com/).
+"""
 mainSection = "posts" # your main section
 mainSectionTitle = "notes"
 showAllPostsOnHomePage = false # default

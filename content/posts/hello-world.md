@@ -2,7 +2,7 @@
 title: "hello world"
 date: 2021-07-14T17:00:40-04:00
 tags: [dev, life]
-draft: true
+draft: false
 ---
 
 ## Bash
