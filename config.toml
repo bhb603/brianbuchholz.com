@@ -1,0 +1,41 @@
+baseURL = "https://brianbuchholz.com/"
+title = "brianbuchholz.com"
+theme = "LoveIt"
+
+defaultContentLanguage = "en"
+languageCode = "en-us"
+languageName = "English"
+hasCJKLanguage = false
+
+enableRobotsTXT = true
+
+[author]
+name = "Brian Buchholz"
+
+[params]
+title = "brianbuchholz.com"
+description = "Personal site of Brian Buchholz"
+
+[params.header]
+desktopMode = "fixed"
+mobileMode = "auto"
+[params.header.title]
+name = "😊"
+
+[params.home]
+[params.home.profile]
+enabled = true
+title = "Hello."
+subtitle = "I'm a Software Engineer at <u><a href=\"https://www.codecademy.com\">Codecademy</a></u>."
+typeit = false
+social = true
+disclaimer = ""
+[params.home.posts]
+enable = false
+[params.social]
+GitHub = "bhb603"
+Linkedin = "buchholz1"
+[params.app]
+title = "brianbuchholz.com"
+[params.footer]
+author = false
