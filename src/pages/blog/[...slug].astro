@@ -6,8 +6,11 @@ import { SITE_TITLE } from '../../consts';
 import BlogPost from '../../layouts/BlogPost.astro';
 import Layout from '../../layouts/Main.astro'
 
+
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
+	const isDev = import.meta.env.MODE === 'development';
+	const posts = (await getCollection('blog'))
+		.filter((post) => isDev || post.data.publish);
 	return posts.map((post) => ({
 		params: { slug: post.slug },
 		props: post,

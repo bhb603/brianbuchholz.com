@@ -6,18 +6,37 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import FormattedDate from '../components/FormattedDate.astro';
 import Layout from '../layouts/Main.astro'
 
-const posts = (await getCollection('blog')).sort((a, b) => {
-	return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
-});
+const isDev = import.meta.env.MODE === 'development';
+
+const posts = (await getCollection('blog'))
+	.filter((post) => isDev || post.data.publish)
+	.sort((a, b) => {
+		return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+	});
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
 	<p>
 		Hi, I'm Brian Buchholz.
 		I'm a software engineer at <a href="https://www.mos.com/">Mos</a>.
+		This is my website.
 	</p>
 
 	<h2>Blog</h2>
+
+	<blockquote cite="https://changelog.com/podcast/552">
+		<p>
+			If you're thinking without writing, you only think you're thinking.
+		</p>
+		<p>
+			<cite>
+				<a href="https://changelog.com/podcast/552">
+					Leslie Lamport
+				</a>
+			</cite>
+		</p>
+	</blockquote>
+
 	<ul class="blog-posts">
 		{posts.map((post) => (
 			<li>
