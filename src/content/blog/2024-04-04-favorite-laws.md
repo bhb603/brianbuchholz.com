@@ -38,4 +38,6 @@ If there are 10 bugs in the backlog, there may be two-or-three which account for
 
 If a feature or MVP has 10 acceptance criteria, often a few account for most of the user value. If possible deliver those first, and iterate on the other cases later.
 
-###
+### Brooks' Law (Mythical Man Month)
+
+### Code is Read 10x more than it's Written
